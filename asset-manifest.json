@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-1-LucasJuarez/static/css/main.a093d51d.css",
+    "main.js": "/react-1-LucasJuarez/static/js/main.177c50e1.js",
+    "index.html": "/react-1-LucasJuarez/index.html",
+    "main.a093d51d.css.map": "/react-1-LucasJuarez/static/css/main.a093d51d.css.map",
+    "main.177c50e1.js.map": "/react-1-LucasJuarez/static/js/main.177c50e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a093d51d.css",
+    "static/js/main.177c50e1.js"
+  ]
+}
