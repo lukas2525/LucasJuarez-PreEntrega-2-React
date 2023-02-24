@@ -1,8 +1,14 @@
 
+import Footer from "./Components/Footer/Footer";
+import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
+import Navbar from "./Components/Navbar/Navbar";
+
 function App() {
   return (
     <div>
-      <h1> Hola React!</h1>
+      <Navbar />
+      <ItemListContainer greeting= {"Hola Profe! Espero tenga una buena semana!"}/>
+      <Footer />
     </div>
   );
 }

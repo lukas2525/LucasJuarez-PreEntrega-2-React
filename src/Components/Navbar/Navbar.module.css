@@ -1,0 +1,26 @@
+
+.estilosGral {
+    width: 100%;
+    height: 15vh;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.estilosUl {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+    color: gold;
+    cursor: pointer;
+}
+
+.tituloPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
