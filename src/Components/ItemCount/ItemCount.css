@@ -1,0 +1,10 @@
+
+.stylesItemCount{
+    color: blue;
+    font-weight: bold;
+    background-color: whitesmoke;
+    border:ridge;
+    border-color: gold;
+    padding: 10px;
+    margin: 5px;
+}

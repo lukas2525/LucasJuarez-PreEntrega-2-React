@@ -1,0 +1,20 @@
+
+.bgColor{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+}
+
+.cardGral{
+    text-align: center;
+    margin: 30px;
+    border: ridge;
+    border-color: black;
+}
+
+.typographyCards{
+    justify-content:center;
+    background-color: gold;    
+    color: black;
+}

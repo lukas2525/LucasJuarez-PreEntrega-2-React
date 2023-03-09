@@ -1,0 +1,14 @@
+.cardGral{
+   margin: 15px;
+   border-color:black
+}
+
+.typographyCards{
+    justify-content:center;
+    background-color: whitesmoke;    
+}
+
+.button{
+    text-decoration: none;
+    padding: 5px;
+}
