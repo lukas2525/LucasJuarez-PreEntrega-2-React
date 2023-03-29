@@ -12,7 +12,7 @@ const Cart = () => {
   const clear = () =>{
 
     Swal.fire({
-      title: 'Esta seguro de eliminar su carrito de juegos?',
+      title: 'Esta seguro de eliminar sus juegos del carrito?',
       showDenyButton: true,
       denyButtonColor: "gold",
       showCancelButton: true,
