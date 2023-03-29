@@ -1,74 +1,70 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { videoJuegos } from "../../juegosMock";
 import "./ItemDetailContainer.css";
-
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
 import ItemCount from "../ItemCount/ItemCount";
+import { CartContext } from "../../context/CartContext";
+import Swal from "sweetalert2";
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
+
+  const {agregarAlCarrito, getQuantityById} = useContext( CartContext )
 
   const videoJuegosSelected = videoJuegos.find(
     (element) => element.id === Number(id)
   );
 
   const onAdd = (cantidad) => {
-    console.log(`Se agrego al Carrito ${cantidad} productos`);
+
+    let producto = {
+      ...videoJuegosSelected,
+      quantity: cantidad
+    }
+
+
+    agregarAlCarrito(producto)
+    
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Juego agregado exitosamente!',
+      showConfirmButton: false,
+      timer: 1500
+    })
   };
 
+  let quantity = getQuantityById(Number(id))
+  console.log(quantity);
+
   return (
-    <div className="bgColor">
-      <Card sx={{ width: 300 }} className="cardGral">
-        <CardMedia
-          sx={{ height: 350 }}
-          image={videoJuegosSelected.img}
-          alt="Imagen ilustrativa del Juego"
-          title={videoJuegosSelected.title}
-        />
-        <CardContent className="typographyCards">
-          <Typography
-            gutterBottom
-            variant="h5"
-            component="div"
-            fontWeight="bold"
-            textAlign="center"
-          >
+      <div className={"containerItemDetail"}>
+        <div className={"containerImage"}>
+          <img src={videoJuegosSelected.img} alt="" />
+        </div>
+  
+        <div className={"containerDetail"}>
+          <h1 style={{ fontFamily: "monospace" }}>
+            <span style={{ fontSize: "20px"}} className="color">Nombre:</span>{" "}
             {videoJuegosSelected.title}
-          </Typography>
-          <Typography
-            variant="body2"
-            color="blue"
-            fontWeight="bold"
-            textAlign="center"
-          >
+          </h1>
+          <h2 style={{ fontFamily: "monospace" }}>
+            <span style={{ fontSize: "20px" }} className="color">Descripcion:</span>{" "}
             {videoJuegosSelected.description}
-          </Typography>
-          <Typography
-            variant="body2"
-            color="black"
-            fontWeight="bold"
-            padding="5px"
-          >
-            {videoJuegosSelected.seccion}
-          </Typography>
-          <Typography
-            variant="body2"
-            color="grey"
-            fontWeight="bold"
-            textAlign="center"
-            fontSize="25px"
-          >
-            ${videoJuegosSelected.price}
-          </Typography>
-          <ItemCount stock={videoJuegosSelected.stock} onAdd={onAdd} />
-        </CardContent>
-      </Card>
-    </div>
-  );
+          </h2>
+          <h3 style={{ fontFamily: "monospace" }}>
+            <span style={{ fontSize: "20px" }} className="color">Precio:</span><span className="color1"> $
+            {videoJuegosSelected.price}</span>
+          </h3>
+  
+          <ItemCount
+            onAdd={onAdd}
+            stock={videoJuegosSelected.stock}
+            initial={quantity}
+          />
+        </div>
+      </div>
+    );
 };
 
 export default ItemDetailContainer;

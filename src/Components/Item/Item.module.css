@@ -1,11 +1,12 @@
 .cardGral{
    margin: 15px;
-   border-color:black
+   border-color:black;
+   border: ridge;
 }
 
 .typographyCards{
     justify-content:center;
-    background-color: whitesmoke;    
+    background-color: white;    
 }
 
 .button{
