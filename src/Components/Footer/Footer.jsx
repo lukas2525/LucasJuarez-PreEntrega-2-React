@@ -1,5 +1,5 @@
 import "./Footer.css";
-import { GiConsoleController } from "react-icons/gi";
+import { SiPlaystation4 } from "react-icons/si"
 import { SiInstagram } from "react-icons/si";
 import { TbBrandTwitter } from "react-icons/tb";
 import { SiWhatsapp } from "react-icons/si";
@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="tituloPrincipal">
       <Link to="/" className="tituloPrincipal">
         <h1>¡VideoJuegos!</h1>
-        <GiConsoleController fontSize="3em" color="gold" />
+        <SiPlaystation4 fontSize="4em" color="white" />
       </Link>
       <div>
         <Link to="/"className="estilosRedes">
