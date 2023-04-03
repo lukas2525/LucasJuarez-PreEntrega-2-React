@@ -31,8 +31,10 @@ const FormCheckout = ({ cart, getTotalPrice, setOrderId, clearCart }) => {
     cart.map((product) => {
       let refDoc = doc(db, "videoJuegos", product.id);
       updateDoc(refDoc, { stock: product.stock - product.quantity });
+      return product;
     });
   };
+
 
   return (
     <div>
@@ -65,7 +67,7 @@ const FormCheckout = ({ cart, getTotalPrice, setOrderId, clearCart }) => {
         />
         <input
           type="text"
-          placeholder="DNI:"
+          placeholder="Documento Numero:"
           value={userData.document}
           onChange={(e) =>
             setUserData({ ...userData, document: e.target.value })
