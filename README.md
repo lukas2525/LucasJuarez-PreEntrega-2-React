@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Ecommerce de VideosJuegos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Para clonar el reposiorio ejecute lo siguiente:
 
-## Available Scripts
+ ```
+ git clone  https://github.com/lukas2525/LucasJuarez-PreEntrega-2-React.git
+ ```
+ [Google](https://www.google.com/)
 
-In the project directory, you can run:
+ ### Las dependencias del proyecto son las siguientes:
 
-### `npm start`
+ - React Spinners
+ - React Icons
+ - Sweetalert 2 
+ - Material Ui
+ - React Router
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ !["Esta es la imagen de presentacion de mi proyecto" ](/public/signal-3655575_1280-800x445.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ ## Tenemos exclusividad en juegos de Playstation 4
 
-### `npm test`
+ ### Variedad de generos:
+* Deporte
+* Aventura
+* Shooter
+* Lucha
+* Carrera-Autos
+* Favoritos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Las ultimas novedades, las encontras ¡Aca!
 
-### `npm run build`
+!["Imagen ilustrativa del juego fifa 23"](/public/20227208535211_1.jpg)
+>Fifa 23
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+!["Imagen ilustrativa del juego Nba 2k23"](/public/wp11351407.jpg)
+>Nba 2k23
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Imagen ilustrativa del juego Formula 1 2022](/public/maxresdefault.jpg)
+>Formula 1 2022
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Imagen ilustrativa del juego Call of Duty](/public/call-of-duty-2023.jpg)
+>Call of Duty
 
-### `npm run eject`
+![Imagen ilustrativa del juego GTA V](/public/maxresdefault%20(1).jpg)
+>GTA V
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Imagen ilustrativa del juego UFC](/public/UFC-LOGO.jpg)
+>UFC
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Podes seguirnos tambien en la redes sociales:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ [ Instagram](https://www.instagram.com/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ [ Facebook](https://www.facebook.com/)
 
-## Learn More
+ [ Whats upp](https://www.whatsapp.com/?lang=es)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![](/public/photo-1493711662062-fa541adb3fc8.jpg)
+ > La diversión es sana.
