@@ -69,8 +69,10 @@
     font-family: monospace;
 }
 
-.color2{
-    color: blue;
+.bgFondo {
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
 }
 
 

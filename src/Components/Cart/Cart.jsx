@@ -1,4 +1,7 @@
 import { Button, Link } from "@mui/material";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+
 import React, { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import "./Cart.css";
@@ -10,7 +13,7 @@ const Cart = () => {
     useContext(CartContext);
 
   const [mostrarForm, setMostrarForm] = useState(false);
-  const [orderId, setOrderId] = useState(null)
+  const [orderId, setOrderId] = useState(null);
 
   const clear = () => {
     Swal.fire({
@@ -37,15 +40,38 @@ const Cart = () => {
     });
   };
 
-  if(orderId){
+
+  if (orderId) {
     return (
-      <div>
-      <h2>Gracias por su compra</h2>
-      <h4>El comprabante es: {orderId}</h4>
-      <Link to="/">Seguir comprando</Link>
+      <div className="bgFondo">
+        <CardContent>
+          <Typography
+            gutterBottom
+            variant="h3"
+            component="div"
+            fontWeight="bold"
+            textAlign="center"
+          >
+            Gracias por su compra!
+          </Typography>
+          <Typography
+            variant="h6"
+            color="white"
+            fontWeight="bold"
+            textAlign="center"
+          >
+            El numero de comprobante es : {orderId}
+          </Typography>
+        </CardContent>
+        <Button size="small" color="warning" variant="contained">
+          <Link to="/" underline="none" color="white">
+            Seguir comprando
+          </Link>
+        </Button>
       </div>
-    )
+    );
   }
+  
 
   return (
     <div>
@@ -61,7 +87,6 @@ const Cart = () => {
                     alt="ilustracion del video juego"
                   />
                   <div className="cart-item-info">
-                    <h2 className="color2">{item.seccion}</h2>
                     <h2>${item.price}</h2>
                     <h2>Juegos: {item.quantity}</h2>
                     <Button
@@ -81,7 +106,11 @@ const Cart = () => {
 
             {cart.length > 0 && (
               <div className="btn-cart">
-                <Button color="warning" variant="contained" onClick={() =>setMostrarForm(true)}>
+                <Button
+                  color="warning"
+                  variant="contained"
+                  onClick={() => setMostrarForm(true)}
+                >
                   Confirmar compra
                 </Button>
                 <Button color="warning" variant="contained" onClick={clear}>
@@ -94,7 +123,12 @@ const Cart = () => {
           </div>
         </div>
       ) : (
-        <FormCheckout cart={cart} getTotalPrice={getTotalPrice} setOrderId={setOrderId} clearCart={clearCart} />
+        <FormCheckout
+          cart={cart}
+          getTotalPrice={getTotalPrice}
+          setOrderId={setOrderId}
+          clearCart={clearCart}
+        />
       )}
     </div>
   );

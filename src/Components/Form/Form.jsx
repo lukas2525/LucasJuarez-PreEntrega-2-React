@@ -44,8 +44,6 @@ const Form = () => {
         setErrorMessage("Contraseña incorrecta, debe contener al menos 6 caracteres")
         return;
     }
-    
-
 
     //Instruccion
     console.log(userData);
