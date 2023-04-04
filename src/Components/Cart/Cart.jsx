@@ -64,7 +64,7 @@ const Cart = () => {
           </Typography>
         </CardContent>
         <Button size="small" color="warning" variant="contained">
-          <Link to="/" underline="none" color="white">
+        <Link to="/" underline="none" color="white">
             Seguir comprando
           </Link>
         </Button>
